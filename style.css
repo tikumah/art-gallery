@@ -1,0 +1,111 @@
+/* Desktop view code */
+body{
+    height: auto;
+}
+.left-rectangle {
+    height: 100vh;
+    width: 33.3%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    background-color: #151515;
+}
+
+.image-hero {
+    position: absolute;
+    height: 100%;
+    width: 33.3%;
+    top: 0%;
+    right: 33.4%;
+}
+
+.title{
+    color: #ffffff;
+    position: absolute;
+    left: 14%;
+    font-size: 90px;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display';
+}
+.hero-text{
+    position: absolute;
+    font-family: Outfit;
+    font-size: 22px;
+    line-height: 32px;
+    color: #444444;
+    top: 10%;
+    left: 62%;
+
+}
+
+/* Tablet view code */
+@media (max-width:1200px){
+    .left-rectangle {
+        display: none;
+    }
+
+    .image-hero {
+        width: 50%;
+        left: 0%;
+    }
+    .title{
+        left: 40%;
+        color: #151515;
+        font-size: 75px;
+    }
+    .hero-text{
+        position: absolute;
+        top:45%;
+        left: 40%;
+
+    }
+}
+
+/* mobile view code */
+@media (max-width:650px) {
+    .image-hero{
+        height: 50vh;
+        width: 100%;
+        right: 0%;
+    }
+    .title{
+        left: 1%;
+        top: 47%;
+        font-size: 40px;
+    }
+ 
+     .hero-text{
+        top: 67%;
+        left: 2%;
+    }
+   .hero-text br{
+        content: " ";
+   } 
+}
+/* watch & small mobile view code */
+@media (max-width:197px) {
+    .title{
+        font-size: 17px;
+    }
+    .title br{
+        content: " ";
+    }
+    .hero-text{
+        top:56%;
+        font-size: 20px;
+        line-height: normal;
+    }
+}
+@media (max-height:191px) {
+    .title{
+        font-size: 20px;
+    }
+    .title br{
+        content: " ";
+    }
+    .hero-text{
+        top:70%;
+        font-size: 20px;
+        line-height: normal;
+    }
+}
