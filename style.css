@@ -1,111 +1,441 @@
-/* Desktop view code */
-body{
+body {
+    margin: 0%;
+}
+
+.section-one {
+    position: relative;
+}
+
+.left-rectangle {
+    width: 33.3%;
+    height: 100vh;
+    background-color: #151515;
+    display: inline-block;
+}
+
+.hero-image {
+    width: 33.3%;
+    height: 100vh;
+    margin-left: -0.3%;
+
+}
+
+.title {
+    position: absolute;
+    top: 10%;
+    font-size: 90px;
+    font-family: 'Big Shoulders Display';
+    text-transform: uppercase;
+    color: #ffffff;
+    left: 11%;
+
+}
+
+.hero-text {
+    position: absolute;
+    font-size: 25px;
+    line-height: 30px;
+    color: #444444;
+    top: 12%;
+    left: 60%;
+}
+
+.location-link {
+    position: absolute;
+    background-color: #d5966c;
+    width: 200px;
+    height: 45px;
+    text-transform: uppercase;
+    left: 65%;
+    top: 60%;
+}
+
+.arrow-container {
+    position: absolute;
+    background-color: #151515;
+    width: 35px;
+    height: 45px;
+    top: 0%;
+    right: 0%;
+}
+
+.arrow-right {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+.link-text {
+    position: absolute;
+    top: 25%;
+    left: 20px;
+    color: #ffffff;
+    font-family: 'Big Shoulders Display';
+    font-size: 20px;
+}
+
+.section-two {
+    margin-top: 30px;
+    padding-left: 10%;
     height: auto;
 }
-.left-rectangle {
-    height: 100vh;
-    width: 33.3%;
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    background-color: #151515;
+
+.your-day {
+    display: inline-block;
 }
 
-.image-hero {
-    position: absolute;
+.your-day-hero-text {
+    font-size: 60px;
+    font-family: 'Big Shoulders Display';
+    text-transform: uppercase;
+
+}
+
+.wander-sub-hero-text {
+    font-size: 30px;
+    color: #444444;
+}
+
+.your-day-image {
+    width: 40%;
+    margin-left: 10%;
+}
+
+.your-day-image-mobile {
+    display: none;
+}
+
+.section-three {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.section-three-left-pics {
+    width: 120%;
     height: 100%;
-    width: 33.3%;
-    top: 0%;
-    right: 33.4%;
 }
 
-.title{
+.section-three-right-pics {
+    width: 100%;
+    height: 50%;
+    margin-left: 30%;
+    max-height: 50%;
+}
+
+.black-box {
+    font-family: 'Outfit';
+    height: 40%;
+    width: 100%;
+    background-color: #151515;
+    margin-left: 30%;
     color: #ffffff;
-    position: absolute;
-    left: 14%;
-    font-size: 90px;
+
+}
+
+.black-box-hero-text {
+    font-size: 30px;
     text-transform: uppercase;
     font-family: 'Big Shoulders Display';
+    padding-top: 40px;
+    padding-left: 40px;
 }
-.hero-text{
+
+.black-box-sub-text {
+    padding-left: 40px;
+    line-height: 20px;
+}
+
+.map-container {
+    position: relative;
+    margin-top: 10px;
+}
+
+.map {
+    width: 100%;
+    height: 400px;
+
+}
+
+.location-link-back-to-home {
     position: absolute;
-    font-family: Outfit;
-    font-size: 22px;
-    line-height: 32px;
-    color: #444444;
-    top: 10%;
-    left: 62%;
+    top: 0%;
+    left: 10%;
+    background-color: #151515;
+    width: 200px;
+    height: 45px;
+    text-transform: uppercase;
 
 }
 
-/* Tablet view code */
-@media (max-width:1200px){
+.arrow-left {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+.back-arrow-container {
+    position: absolute;
+    background-color: #d5966c;
+    width: 35px;
+    height: 45px;
+    top: 0%;
+    left: 0%;
+}
+
+.back-link-text {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    color: #ffffff;
+    font-family: 'Big Shoulders Display';
+    font-size: 20px;
+}
+
+.map-mobile {
+    display: none;
+}
+
+.section-five {
+
+}
+.section-five{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #151515;
+    color: #ffffff;
+    width: 100%;
+}
+
+.our-location{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display';
+    margin-left: 20%;
+    margin-top: 10%;
+}
+.King_Street{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #d5966c;
+    font-family: 'Big Shoulders Display';
+}
+.newport{
+    line-height: 25px;
+    
+}
+.Our-newly-opened-gallery{
+    line-height: 25px;
+}
+.footer{
+    padding: 30px;
+    background-color: #d5966c;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+  
+}
+.footer-text-hero{
+    font-size: 30px;
+    font-family: 'Big Shoulders Display';
+    text-transform: uppercase;
+}
+.footer-middle-text{
+    line-height: 25px;
+}
+.footer-links{
+    word-spacing: 10px;
+    color: #151515;
+}
+
+
+/* Tablet view */
+@media (max-width:900px) {
     .left-rectangle {
         display: none;
     }
 
-    .image-hero {
+    .hero-image {
         width: 50%;
+    }
+
+    .title {
+        font-size: 50px;
+        color: #151515;
+        left: 30%;
+
+    }
+
+    .hero-text {
+        top: 40%;
+        position: absolute;
+        font-size: 25px;
+        line-height: 30px;
+        color: #444444;
+        left: 30%;
+    }
+
+    .location-link {
+        left: 40%;
+        top: 70%;
+    }
+
+    .section-two {
+        padding-left: 5%;
+    }
+
+    .your-day {
+        display: inline-block;
+    }
+
+    .your-day-hero-text {
+        font-size: 30px;
+    }
+
+    .wander-sub-hero-text {
+        font-size: 20px;
+    }
+
+    .black-box {
+        height: auto;
+    }
+
+    .map-container {
+        position: relative;
+        margin-top: 70px;
+    }
+}
+
+/* mobile view */
+@media (max-width:563px) {
+    .hero-image {
+        width: 100%;
+        height: 50vh;
+        margin-right: -50%;
+    }
+
+    .title {
+        position: relative;
+        left: 3%;
+        font-size: 40px;
+        margin-top: 12px;
+    }
+
+    .hero-text {
+        margin-top: 12px;
+        position: relative;
+        left: 3%;
+
+    }
+
+    .hero-text br {
+        content: " ";
+    }
+
+    .location-link {
+        position: relative;
+        margin-top: 5%;
+        left: 3%;
+    }
+
+    .section-two {
+        padding-left: 5%;
+    }
+
+    .your-day {
+        display: inline-block;
+    }
+
+    .your-day-hero-text {
+        font-size: 30px;
+    }
+
+    .wander-sub-hero-text {
+        font-size: 20px;
+    }
+
+    .wander-sub-hero-text br {
+        content: " ";
+    }
+
+    .your-day-image {
+        display: none;
+    }
+
+    .your-day-image-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .section-three {
+        display: block;
+        margin-left: 1%;
+        margin-right: 0%;
+    }
+
+    .section-three-left-pics {
+        width: 100%;
+        height: 50%;
+    }
+
+    .section-three-right-pics {
+        width: 100%;
+        height: 50%;
+        margin-left: 1%;
+    }
+
+    .black-box {
+        margin-left: 1%;
+        margin-top: -9%;
+
+    }
+
+    .map-container {
+        position: relative;
+        margin-top: -15px;
+    }
+
+    .map-mobile {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .location-link-back-to-home {
         left: 0%;
     }
-    .title{
-        left: 40%;
-        color: #151515;
-        font-size: 75px;
+    .section-five{
+        display: block;
+        margin-top: -30px;
     }
-    .hero-text{
-        position: absolute;
-        top:45%;
-        left: 40%;
+    .our-location{
+        margin-left: 5px;
+    }
+    .our-location br{
+        content: " ";
+    }
+    .King_Street{
+        margin-left: 5px;
+    }
+    .newport{
+        margin-left: 5px;
+    }
+    .Our-newly-opened-gallery{
+        margin-left: 5px;
+    }
+    .Our-newly-opened-gallery br{
+        content: " ";
+    }
+    .footer{
+        display: block;
+    }
 
-    }
-}
-
-/* mobile view code */
-@media (max-width:650px) {
-    .image-hero{
-        height: 50vh;
-        width: 100%;
-        right: 0%;
-    }
-    .title{
-        left: 1%;
-        top: 47%;
-        font-size: 40px;
-    }
- 
-     .hero-text{
-        top: 67%;
-        left: 2%;
-    }
-   .hero-text br{
-        content: " ";
-   } 
-}
-/* watch & small mobile view code */
-@media (max-width:197px) {
-    .title{
-        font-size: 17px;
-    }
-    .title br{
-        content: " ";
-    }
-    .hero-text{
-        top:56%;
-        font-size: 20px;
-        line-height: normal;
-    }
-}
-@media (max-height:191px) {
-    .title{
-        font-size: 20px;
-    }
-    .title br{
-        content: " ";
-    }
-    .hero-text{
-        top:70%;
-        font-size: 20px;
-        line-height: normal;
+    .footer-links{
+        margin-top: 10px;
     }
 }
