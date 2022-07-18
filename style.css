@@ -27,8 +27,11 @@ body {
     font-family: 'Big Shoulders Display';
     text-transform: uppercase;
     color: #ffffff;
-    left: 11%;
+    left: 13.3%;
 
+}
+.title-black-tail{
+    color: #151515;
 }
 
 .hero-text {
@@ -42,17 +45,20 @@ body {
 
 .location-link {
     position: absolute;
-    background-color: #d5966c;
+    background-color: #151515;
     width: 200px;
     height: 45px;
     text-transform: uppercase;
     left: 65%;
     top: 60%;
 }
+.location-link:hover{
+    background-color: #d5966c;
+}
 
 .arrow-container {
     position: absolute;
-    background-color: #151515;
+    background-color: #d5966c;
     width: 35px;
     height: 45px;
     top: 0%;
@@ -73,6 +79,10 @@ body {
     font-family: 'Big Shoulders Display';
     font-size: 20px;
 }
+.location-link-back-to-home:hover{
+    background-color: #d5966c;
+}
+
 
 .section-two {
     margin-top: 30px;
@@ -115,7 +125,7 @@ body {
 
 .section-three-left-pics {
     width: 120%;
-    height: 100%;
+    height: 110%;
 }
 
 .section-three-right-pics {
@@ -127,7 +137,7 @@ body {
 
 .black-box {
     font-family: 'Outfit';
-    height: 40%;
+    height: 50%;
     width: 100%;
     background-color: #151515;
     margin-left: 30%;
@@ -150,7 +160,7 @@ body {
 
 .map-container {
     position: relative;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 .map {
@@ -198,15 +208,14 @@ body {
     display: none;
 }
 
-.section-five {
-
-}
 .section-five{
+    position: relative;
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: #151515;
     color: #ffffff;
     width: 100%;
+    
 }
 
 .our-location{
@@ -230,11 +239,18 @@ body {
     line-height: 25px;
 }
 .footer{
+    margin-top: 100px;
+    color: white;
     padding: 30px;
-    background-color: #d5966c;
+    background-color: #151515;
     display: grid;
     grid-template-columns: 25% 50% 25%;
   
+}
+.footer-active{
+    margin: 0px;
+    background-color: #d5966c;
+    color: #151515;
 }
 .footer-text-hero{
     font-size: 30px;
@@ -433,6 +449,7 @@ body {
     }
     .footer{
         display: block;
+        margin-top: 10px;
     }
 
     .footer-links{
